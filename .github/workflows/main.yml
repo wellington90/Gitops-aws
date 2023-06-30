@@ -35,11 +35,11 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: <your-aws-region> # Substitua pela região AWS correta
+          aws-region: us-east-1 # Substitua pela região AWS correta
 
       - name: Configure kubectl
         run: |
-          aws eks update-kubeconfig --name <your-eks-cluster-name> --region <your-aws-region> # Substitua pelo nome do cluster EKS e pela região AWS correta
+          aws eks update-kubeconfig --name cluster-app --region us-east-1 # Substitua pelo nome do cluster EKS e pela região AWS correta
 
       - name: Deploy to EKS
         run: |
