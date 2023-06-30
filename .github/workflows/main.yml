@@ -37,17 +37,25 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1 # Substitua pela região AWS correta
           
-      - name: Install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
+      - name: Setup Kustomize
+        uses: imranismail/setup-kustomize@v1
+        with:
+          kustomize-version: "3.6.1"
 
-      - name: Configure kubectl
+      - name: update k8s
         run: |
-          aws eks update-kubeconfig --name cluster-app --region us-east-1 # Substitua pelo nome do cluster EKS e pela região AWS correta
+          cd k8s
+          kustomize edit set image app=w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
+          cat kustomization.yaml
 
-      - name: Deploy to EKS
+      - name: commit
         run: |
-          kubectl apply -k ./k8s
-          
+          git config --local user.email "action@github.com"
+          git config --local user.name "Deploy Action"
+          git commit -am "change image tag"
+
+      - name: Push para o GitHub
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           
