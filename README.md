@@ -33,7 +33,7 @@ Executando o aplicativo Flask usando Docker.
 3° Abra um terminal ou prompt de comando e navegue até o diretório onde você salvou o arquivo Dockerfile.
 
 4° Execute o seguinte comando para construir a imagem Docker do aplicativo:
-`docker build -t myflaskapp`.
+`docker build -t myflaskapp .`
 
 5° Após a conclusão da construção da imagem, execute o seguinte comando para executar um contêiner baseado nessa imagem:
 `docker run -p 5000:5000 myflaskapp`
