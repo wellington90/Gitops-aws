@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: app  # Nome do deployment
 spec:
-  replicas: 2
+  replicas: 2  # Número de réplicas desejadas
   selector:
     matchLabels:
-      app: app
+      app: app  # Rótulo para selecionar os pods
   template:
     metadata:
       labels:
-        app: app
+        app: app  # Rótulo para o template do pod
     spec:
       containers:
-        - name: app
-          image: app
+        - name: app  # Nome do container
+          image: app  # Nome da imagem do container
           ports:
-            - containerPort: 5000
+            - containerPort: 5000  # Porta em que o container está escutando
