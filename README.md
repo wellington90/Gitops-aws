@@ -7,8 +7,7 @@ O arquivo app.py contém o código para um aplicativo Flask básico que retorna 
 Executando o aplicativo Flask localmente.
 
 1° Certifique-se de ter o Flask instalado. Você pode instalá-lo usando o pip:
-
-'pip install flask'
+`pip install flask`
 
 2° Salve o código em um arquivo Python, por exemplo, app.py.
 
