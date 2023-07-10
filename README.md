@@ -7,6 +7,7 @@ O arquivo app.py contém o código para um aplicativo Flask básico que retorna 
 Executando o aplicativo Flask localmente.
 
 1° Certifique-se de ter o Flask instalado. Você pode instalá-lo usando o pip:
+
 pip install flask
 
 2° Salve o código em um arquivo Python, por exemplo, app.py.
@@ -14,6 +15,7 @@ pip install flask
 3° Abra um terminal ou prompt de comando e navegue até o diretório onde você salvou o arquivo app.py.
 
 4° Execute o aplicativo Flask digitando o seguinte comando:
+
 python app.py
 
 5° O Flask iniciará o servidor de desenvolvimento e você verá uma saída semelhante a esta:
@@ -33,9 +35,11 @@ Executando o aplicativo Flask usando Docker.
 3° Abra um terminal ou prompt de comando e navegue até o diretório onde você salvou o arquivo Dockerfile.
 
 4° Execute o seguinte comando para construir a imagem Docker do aplicativo:
+
 docker build -t myflaskapp .
 
 5° Após a conclusão da construção da imagem, execute o seguinte comando para executar um contêiner baseado nessa imagem:
+
 docker run -p 5000:5000 myflaskapp
 
 6° O servidor do Flask estará em execução no contêiner Docker e você poderá acessá-lo abrindo um navegador e navegando até http://localhost:5000/. A mensagem "Olá, mundo! -- 01/07/2023" será exibida no navegador.
