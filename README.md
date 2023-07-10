@@ -4,7 +4,7 @@ Este projeto contém códigos de exemplo relacionados à construção e implanta
 ##Flask App
 O arquivo app.py contém o código para um aplicativo Flask básico que retorna a mensagem "Olá, mundo! -- 01/07/2023" quando a URL raiz é acessada.
 
-Executando o aplicativo Flask localmente
+Executando o aplicativo Flask localmente.
 1° Certifique-se de ter o Flask instalado. Você pode instalá-lo usando o pip:
 pip install flask
 
