@@ -18,7 +18,7 @@ python app.py
 5° O Flask iniciará o servidor de desenvolvimento e você verá uma saída semelhante a esta:
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 
-6° O servidor está agora em execução e você pode acessar o aplicativo Flask abrindo um navegador da web e navegando até http://localhost:5000/. Você verá a mensagem "Olá, mundo! -- 01/07/2023" sendo exibida no navegador.
+6° O servidor está agora em execução e você pode acessar o aplicativo Flask abrindo um navegador da web e navegando até http://localhost:5000/. Você verá a mensagem "Olá, mundo!" sendo exibida no navegador.
 
 ## Docker
 O arquivo Dockerfile define as etapas para criar uma imagem Docker do aplicativo Flask.
