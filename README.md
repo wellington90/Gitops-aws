@@ -5,6 +5,7 @@ Este projeto contém códigos de exemplo relacionados à construção e implanta
 O arquivo app.py contém o código para um aplicativo Flask básico que retorna a mensagem "Olá, mundo! -- 01/07/2023" quando a URL raiz é acessada.
 
 Executando o aplicativo Flask localmente.
+
 1° Certifique-se de ter o Flask instalado. Você pode instalá-lo usando o pip:
 pip install flask
 
@@ -23,7 +24,8 @@ python app.py
 ## Docker
 O arquivo Dockerfile define as etapas para criar uma imagem Docker do aplicativo Flask.
 
-Executando o aplicativo Flask usando Docker
+Executando o aplicativo Flask usando Docker.
+
 1° Certifique-se de ter o Docker instalado e em execução em sua máquina.
 
 2° Salve o código fornecido anteriormente em um arquivo chamado Dockerfile.
@@ -41,7 +43,8 @@ docker run -p 5000:5000 myflaskapp
 ## Kubernetes
 Os arquivos deployment.yaml e service.yaml são exemplos de manifestos Kubernetes para implantar o aplicativo Flask em um cluster Kubernetes.
 
-Implantação do aplicativo no Kubernetes
+Implantação do aplicativo no Kubernetes.
+
 1° Certifique-se de ter o kubectl instalado e configurado corretamente para se conectar ao seu cluster Kubernetes.
 
 2° Salve os códigos fornecidos anteriormente em arquivos YAML separados, por exemplo, deployment.yaml e service.yaml.
