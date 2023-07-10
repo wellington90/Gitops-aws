@@ -1,11 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization  # Tipo de arquivo Kustomize
+kind: Kustomization
 
-resources:  # Recursos que serão gerenciados
-- deployment.yaml  # Arquivo YAML com a definição do deployment
-- service.yaml  # Arquivo YAML com a definição do serviço
+resources:
+- deployment.yaml
+- service.yaml
 
-images:  # Configuração das imagens
-- name: app  # Nome da imagem original
-  newName: w3ll1n9t0n/app  # Novo nome para a imagem
-  newTag: 90c33f7  # Nova tag para a imagem
+images:
+- name: app
+  newName: w3ll1n9t0n/app
+  newTag: df3f918
